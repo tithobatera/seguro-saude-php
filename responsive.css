@@ -1,0 +1,84 @@
+/* Ajustes de responsividade para tabelas em dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* Esconde o cabeçalho da tabela em dispositivos menores */
+    table thead {
+        display: none;
+    }
+
+    /* Cada linha da tabela vira um bloco separado */
+    table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    /* Cada célula é transformada em uma linha com rótulo */
+    table tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 5px;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Remove a borda da última célula de cada bloco */
+    table tbody td:last-child {
+        border-bottom: none;
+    }
+
+    /* Exibe o título da coluna antes do conteúdo */
+    table tbody td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #333;
+        flex-basis: 40%; /* Espaço reservado para o rótulo */
+        text-align: left;
+    }
+
+    /* Ajuste dos botões no layout */
+    table tbody td:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    /* Estiliza botões para ocupar espaço responsivamente */
+    button {
+        flex: 1 1 auto;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Ajuste para campos de seleção e textos */
+    select, textarea {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
+        width: 100%;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* Ajustes para telas muito pequenas, como smartphones */
+    .footer {
+        width: 100%;
+        font-size: 12px;
+    }
+}
