@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost"; 
-$username = "root"; 
-$password = "Titho@1810"; 
-$dbname = "sistema_marcacao_consultas"; 
+$username = ""; 
+$password = ""; 
+$dbname = ""; 
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
