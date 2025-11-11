@@ -43,7 +43,7 @@ CREATE TABLE `administradores` (
 --
 
 INSERT INTO `administradores` (`id`, `nome`, `apelido`, `telefone`, `data_nascimento`, `email`, `usuario`, `senha`) VALUES
-(25, 'admin', 'admin', '999999999', '1996-08-21', 'admin@admin.com', 'admin', '123456');
+(25, 'admin', 'admin', '999999999', '1999-02-29', 'admin@admin.com', 'admin', '123456');
 
 -- --------------------------------------------------------
 
